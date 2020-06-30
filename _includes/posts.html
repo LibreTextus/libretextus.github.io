@@ -1,0 +1,11 @@
+<ul class="blog">
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}" class="post">
+				<h2>{{ post.title }}</h2>
+				<p class="date">{{ post.date | date: '%B %d, %Y' }}</p>
+				<p>{{ post.content | strip_html | truncatewords: 50 }}</p>
+			</a>
+    </li>
+  {% endfor %}
+</ul>

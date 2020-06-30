@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>LibreTextus - {{ page.title }}</title>
+		<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+		<link rel="shortcut icon" type="image/png" href="/assets/image/Icon.svg">
+		<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		{% include nav.html %}
+		<section>
+			<h1>{{ page.title }}</h1>
+			{{ content }}
+		</section>
+		<footer>
+		</footer>
+	</body>
+</html>
